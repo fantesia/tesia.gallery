@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title=title
+    link(rel='stylesheet',href='/stylesheets/style.css')
+    link(rel='stylesheet',href='/stylesheets/albumcss/style.css')
+    link(rel='stylesheet',href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet',href='/javascripts/js/fancybox/jquery.fancybox-1.3.4.css',media='screen')
+    link(rel="stylesheet",href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css")
+    //link(rel="stylesheet" href="/stylesheets/bootstrap-image-gallery.min.css")
+  body(style='background-image: url(/images/bg.png)')
+    div(class="navbar navbar-inverse navbar-fixed-top")
+    div(class='container')
+    div(class='navbar-header')
+    button(class='navbar-toggle collapsed' data-toggle="collapse" data-target=".navbar-collapse")
+    span(class='sr-only')='Toggle navigation'
+    span(class='icon-bar')
+    span(class='icon-bar')
+    span(class='icon-bar')
+    a(class='navbar-brand' style='padding:55px 55px' href='/')='My photoes'
+    div(class='collapse navbar-collapse' style='height: 1px;')
+    ul(class='nav navbar-nav')
+    li
+    a(href='/home')='Home'
+    li
+    a(href='/focus')='About'
+    div(style='background-image: url(/images/top_bg3.jpg);background-position: center 0;background-size: cover;height:200px')
+    block content
+    script(src='http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js')
+    script(src='/javascripts/bootstrap.js')
+    script(src='/javascripts/js/jquery.js')
+    script(src='/javascripts/js/jquery.easing.1.3.js')
+    script(src='/javascripts/js/fancybox/jquery.fancybox-1.3.4.pack.js')
+    script(src='/javascripts/js/custom.js')
+    script(src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js")
+    script(src='/javascripts/js/audio/audio.min.js')
+    //script(src="/bootstrap-image-gallery.min.js")

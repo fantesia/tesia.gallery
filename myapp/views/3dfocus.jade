@@ -1,0 +1,5 @@
+extends layout
+block content
+  for img in imgs
+    a(href='/images/focus/'+img title=img data-gallery target='_blank')
+      img(src='/images/focus/'+img  class="img-thumbnail" style='width:140px;height:140px;margin:5px')

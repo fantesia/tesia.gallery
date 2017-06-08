@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  audio(id="bgsound" loop="loop" autoplay="autoplay")
+    source(src="/images/audio/weichen.mp3") 
+  h3 music
+  for img in imgs
+    a(href='/images/pic/'+img title=img data-gallery target='_blank')
+      img(src='/images/pic/'+img  class="img-thumbnail" style='width:140px;height:140px;margin:5px')
